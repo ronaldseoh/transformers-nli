@@ -44,10 +44,7 @@ def init(args: Any) -> None:
             )
             args.wandb_run_name = None
         wandb_run = wandb.init(
-            name=args.wandb_run_name,
             project=args.wandb_project,
-            entity=args.wandb_entity,
-            id=args.wandb_runid,
             tags=tags,
             resume="must"
 
